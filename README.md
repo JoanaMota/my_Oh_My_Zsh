@@ -132,7 +132,7 @@ fc-cache -vf ~/.local/share/fonts/
 mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
 ```
 
-Fixing this broken theme with the correct font was no piece of cake. The `Ubuntu Mono Nerd Font Complete Mono Windows Compatible.ttf` worked for me. To install just double click to open and click install. (this font is in the repository)
+Fixing this broken theme with the correct font was no piece of cake. The `Ubuntu Mono Nerd Font Complete Mono Windows Compatible.ttf` worked for me. In Windows to install just double click to open and click install. (this font is in the repository)
 
 Afterwards run:
 ```
