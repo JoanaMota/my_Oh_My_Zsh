@@ -141,8 +141,10 @@ fc-cache -vf ~/.local/share/fonts/
 If you are using Bash on Ubuntu on Windows just change the font in the Properties as shown bellow:
 
 Open Properties
+
 ![Open Properties](changeFont1.png)
 
 Change Font
+
 ![Change Font](changeFont2.png)
 
