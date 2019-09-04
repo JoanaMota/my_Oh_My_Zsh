@@ -13,21 +13,23 @@ My Terminal Setup with Zsh + Oh-My-Zsh + PowerLevel9k + WSL(if needed)
 sudo apt-get install zsh
 ```
 #### oh-my-zsh
-
+```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
+```
 This will:
+
     - Write on $HOME/.zshrc
     - Set zsh as default Shell (if typed `y` when asked, if not check the zsh configuration)
     - Create $HOME/.oh-my-zsh directory that contains Oh-My-Zsh scripts and plugins!
 
 
 #### PowerLevel9k
+
 To install PowerLevel9k just run:
 (Make sure you have git installed)
+```
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
-
-
+```
 
 ## Configure zsh/oh-my-zsh
 
@@ -140,6 +142,7 @@ If you are using Bash on Ubuntu on Windows just change the font in the Propertie
 
 Open Properties
 ![Open Properties](changeFont1.png)
+
 Change Font
 ![Change Font](changeFont2.png)
 
