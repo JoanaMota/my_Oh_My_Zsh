@@ -49,7 +49,9 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 ## Configure Powerlevel9k
 
 For colors add:
+```
 export TERM="xterm-256color"
+```
 
 My Powerlevel9k configuration:
 ```
@@ -90,12 +92,16 @@ POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
 POWERLEVEL9K_SHORTEN_DELIMITER=".."
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 ```
-Afterwards it should look like this:
-
+Afterwards it should look somethin like this:
+Git repository in Clean mode
 ![Git repository in Clean mode](git1_Clean.png)
+Git repository with untracked files
 ![Git repository with untracked files](git2_Untracked.png)
+Git repository with modified files
 ![Git repository with modified files](git3_Modified.png)
+Git repository after commit
 ![Git repository after commit](git4_Back_to_Clean.png)
+Git repository after push
 ![Git repository after push](git5_AfterPush.png)
 
 For more configurations visit:
@@ -119,11 +125,9 @@ fc-cache -vf ~/.local/share/fonts/
 mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
 ```
 
-Fixing this broken theme with the correct font was not piece of cake. The `Ubuntu Mono Nerd Font Complete Mono Windows Compatible.ttf` worked for me. To install just double click to open and click install.
+Fixing this broken theme with the correct font was no piece of cake. The `Ubuntu Mono Nerd Font Complete Mono Windows Compatible.ttf` worked for me. To install just double click to open and click install. (this font is in the repository)
 
-pictures
-
-After run:
+Afterwards run:
 ```
 fc-cache -vf ~/.local/share/fonts/
 ```
