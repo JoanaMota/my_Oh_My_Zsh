@@ -93,14 +93,19 @@ POWERLEVEL9K_SHORTEN_DELIMITER=".."
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 ```
 Afterwards it should look somethin like this:
+
 Git repository in Clean mode
 ![Git repository in Clean mode](git1_Clean.png)
+
 Git repository with untracked files
 ![Git repository with untracked files](git2_Untracked.png)
+
 Git repository with modified files
 ![Git repository with modified files](git3_Modified.png)
+
 Git repository after commit
 ![Git repository after commit](git4_Back_to_Clean.png)
+
 Git repository after push
 ![Git repository after push](git5_AfterPush.png)
 
@@ -133,6 +138,8 @@ fc-cache -vf ~/.local/share/fonts/
 ```
 If you are using Bash on Ubuntu on Windows just change the font in the Properties as shown bellow:
 
+Open Properties
 ![Open Properties](changeFont1.png)
+Change Font
 ![Change Font](changeFont2.png)
 
