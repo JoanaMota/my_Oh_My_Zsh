@@ -132,7 +132,7 @@ mkdir -p ~/.config/fontconfig/conf.d/
 mv PowerlineSymbols.otf ~/.local/share/fonts/
 fc-cache -vf ~/.local/share/fonts/
 mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
-
+```
 Linux
 
 ```
