@@ -97,30 +97,32 @@ POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 Afterwards it should look somethin like this:
 
 Git repository in Clean mode
-![Git repository in Clean mode](git1_Clean.png)
+![Git repository in Clean mode](images/git1_Clean.png)
 
 Git repository with untracked files
-![Git repository with untracked files](git2_Untracked.png)
+![Git repository with untracked files](images/git2_Untracked.png)
 
 Git repository with modified files
-![Git repository with modified files](git3_Modified.png)
+![Git repository with modified files](images/git3_Modified.png)
 
 Git repository after commit
-![Git repository after commit](git4_Back_to_Clean.png)
+![Git repository after commit](images/git4_Back_to_Clean.png)
 
 Git repository after push
-![Git repository after push](git5_AfterPush.png)
+![Git repository after push](images/git5_AfterPush.png)
 
 For more configurations visit:
     - https://github.com/Powerlevel9k/powerlevel9k
 
 
 ## Installing Powerline Fonts
-If you are on Windows using WSL it can happen that when you open the shell you have something like this:
+It can happen that when you open the shell you have something like this:
 
-![Broken Theme](brokenTheme.png)
+![Broken Theme](images/brokenTheme.png)
 
 To fix that you need to install some missing Powerline Fonts. 
+
+Windows
 
 ```
 wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
@@ -130,21 +132,28 @@ mkdir -p ~/.config/fontconfig/conf.d/
 mv PowerlineSymbols.otf ~/.local/share/fonts/
 fc-cache -vf ~/.local/share/fonts/
 mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
-```
 
-Fixing this broken theme with the correct font was no piece of cake. The `Ubuntu Mono Nerd Font Complete Mono Windows Compatible.ttf` worked for me. In Windows to install just double click to open and click install. (this font is in the repository)
+Linux
 
-Afterwards run:
 ```
-fc-cache -vf ~/.local/share/fonts/
+wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
+wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
+mkdir ~/.fonts/
+mkdir -p .config/fontconfig/conf.d #if directory doesn't exists
+mv PowerlineSymbols.otf ~/.fonts/
+fc-cache -vf ~/.fonts/
+mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
+
 ```
+If you are using Windows with WSL, fixing this broken theme issue can be a bit pain in the ass. You have to find a Font that works for you and that is recognized in the Settings of the terminal. The `Ubuntu Mono Nerd Font Complete Mono Windows Compatible.ttf` worked for me. In Windows to install just double click to open and click install. (this font is in the repository)
+
 If you are using Bash on Ubuntu on Windows just change the font in the Properties as shown bellow:
 
 Open Properties
 
-![Open Properties](changeFont1.png)
+![Open Properties](images/changeFont1.png)
 
 Change Font
 
-![Change Font](changeFont2.png)
+![Change Font](images/changeFont2.png)
 
