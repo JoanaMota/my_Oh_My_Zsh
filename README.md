@@ -40,14 +40,15 @@ if test -t 1; then
 exec zsh
 fi
 ```
-More zsh configurations in:
-https://github.com/robbyrussell/oh-my-zsh
-
+To configure zsh just open the ~/.zshrc file with `nano ~/.zshrc`.
 
 Now is the time to change the theme of oh-my-zsh, which has several cool themes. I am using Powerlevel9k (has you already suspected). So just change the theme in:
 ```
 ZSH_THEME="powerlevel9k/powerlevel9k"
 ```
+More zsh configurations in:
+https://github.com/robbyrussell/oh-my-zsh
+
 ## Configure Powerlevel9k
 
 For colors add:
@@ -145,6 +146,10 @@ fc-cache -vf ~/.fonts/
 mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
 
 ```
+
+The font that I used in Linux was [DejaVu Sans Mono](https://github.com/powerline/fonts/tree/master/DejaVuSansMono).
+
+
 If you are using Windows with WSL, fixing this broken theme issue can be a bit pain in the ass. You have to find a Font that works for you and that is recognized in the Settings of the terminal. The `Ubuntu Mono Nerd Font Complete Mono Windows Compatible.ttf` worked for me. In Windows to install just double click to open and click install. (this font is in the repository)
 
 If you are using Bash on Ubuntu on Windows just change the font in the Properties as shown bellow:
