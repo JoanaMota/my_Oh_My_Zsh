@@ -64,7 +64,6 @@ POWERLEVEL9K_MODE='nerdfont-complete'
 # PROMPT
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir dir_writable vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status)  
-POWERLEVEL9K_COLOR_SCHEME='dark'
 
 # CONTEX
 POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND="dark"
@@ -74,17 +73,23 @@ POWERLEVEL9K_CONTEXT_TEMPLATE="%n"
 # VCS -> GIT
 POWERLEVEL9K_VCS_GIT_HOOKS=(vcs-detect-changes git-untracked git-aheadbehind git-stash git-remotebranch git-tagname)
 POWERLEVEL9K_VCS_CLEAN_FOREGROUND='black'
-POWERLEVEL9K_VCS_CLEAN_BACKGROUND='orange1'
+POWERLEVEL9K_VCS_CLEAN_BACKGROUND='202' 
+#202 -> orange
 POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='white'
 POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='125'
+#125 -> yellow
 POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='white'
 POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='red'
+
+POWERLEVEL9K_VCS_GIT_GITHUB_ICON=$'\uf408'
 
 # COLORS DIR
 POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='024'
 POWERLEVEL9K_DIR_DEFAULT_FOREGROUND='grey82'
 POWERLEVEL9K_DIR_HOME_BACKGROUND='green'
 POWERLEVEL9K_DIR_HOME_FOREGROUND='grey82'
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND='blue'
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND='grey82'
 
 # COLORS ROOT
 POWERLEVEL9K_CONTEXT_ROOT_FOREGROUND='white'
@@ -95,6 +100,7 @@ POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
 POWERLEVEL9K_SHORTEN_DELIMITER=".."
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 ```
+
 Afterwards it should look somethin like this:
 
 Git repository in Clean mode
@@ -121,11 +127,11 @@ It can happen that when you open the shell you have something like this:
 
 ![Broken Theme](images/brokenTheme.png)
 
-To fix that you need to install some missing Powerline Fonts. 
+To fix that you need to install some missing Powerline Fonts. I follow the intructions from here to patch my fonts. 
 
 Windows
 
-```
+``` bash
 wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
 wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
 mkdir -p  ~/.local/share/fonts/
@@ -136,7 +142,7 @@ mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
 ```
 Linux
 
-```
+``` bash
 wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
 wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
 mkdir ~/.fonts/
@@ -147,10 +153,13 @@ mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
 
 ```
 
+Another easy way to install is just double click on the font (the `.ttf` or `.otf` file) and click install.
+
 The font that I used in Linux was [DejaVu Sans Mono](https://github.com/powerline/fonts/tree/master/DejaVuSansMono).
+If you have some problem with the icons try the [Droid Sans Mono]https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/DroidSansMono).
 
 
-If you are using Windows with WSL, fixing this broken theme issue can be a bit pain in the ass. You have to find a Font that works for you and that is recognized in the Settings of the terminal. The `Ubuntu Mono Nerd Font Complete Mono Windows Compatible.ttf` worked for me. In Windows to install just double click to open and click install. (this font is in the repository)
+If you are using Windows with WSL, fixing this broken theme issue can be a bit pain in the ass. You have to find a Font that works for you and that is recognized in the Settings of the terminal. The `Ubuntu Mono Nerd Font Complete Mono Windows Compatible.ttf` worked for me. (this font is in the repository)
 
 If you are using Bash on Ubuntu on Windows just change the font in the Properties as shown bellow:
 
