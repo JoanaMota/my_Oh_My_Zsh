@@ -156,7 +156,7 @@ mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
 Another easy way to install is just double click on the font (the `.ttf` or `.otf` file) and click install.
 
 The font that I used in Linux was [DejaVu Sans Mono](https://github.com/powerline/fonts/tree/master/DejaVuSansMono).
-If you have some problem with the icons try the [Droid Sans Mono]https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/DroidSansMono).
+If you have some problem with the icons try the [Droid Sans Mono](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/DroidSansMono).
 
 
 If you are using Windows with WSL, fixing this broken theme issue can be a bit pain in the ass. You have to find a Font that works for you and that is recognized in the Settings of the terminal. The `Ubuntu Mono Nerd Font Complete Mono Windows Compatible.ttf` worked for me. (this font is in the repository)
